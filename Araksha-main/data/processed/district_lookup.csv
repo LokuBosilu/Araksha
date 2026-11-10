@@ -1,0 +1,27 @@
+district_id,district_name,province,is_health_zone,parent_district,ocha_pcode,lat,lon,population_2023,piped_water_pct
+LK11,Colombo,Western,false,,LK11,6.9271,79.8612,2365000,84.4
+LK12,Gampaha,Western,false,,LK12,7.0917,79.9999,2304000,58.2
+LK13,Kalutara,Western,false,,LK13,6.5854,79.9607,1222000,42.1
+LK21,Kandy,Central,false,,LK21,7.2906,80.6337,1375000,45.8
+LK22,Matale,Central,false,,LK22,7.4675,80.6234,484000,34.2
+LK23,Nuwara Eliya,Central,false,,LK23,6.9497,80.7891,711000,28.6
+LK31,Galle,Southern,false,,LK31,6.0535,80.2210,1063000,43.5
+LK32,Matara,Southern,false,,LK32,5.9549,80.5550,810000,39.8
+LK33,Hambantota,Southern,false,,LK33,6.1248,81.1185,599000,36.4
+LK41,Jaffna,Northern,false,,LK41,9.6615,80.0255,583000,14.6
+LK42,Kilinochchi,Northern,false,,LK42,9.3803,80.3990,113000,9.8
+LK43,Mannar,Northern,false,,LK43,8.9810,79.9044,99000,21.3
+LK44,Vavuniya,Northern,false,,LK44,8.7514,80.4971,172000,22.7
+LK45,Mullaitivu,Northern,false,,LK45,9.2671,80.8143,92000,11.2
+LK51,Batticaloa,Eastern,false,,LK51,7.7310,81.6747,526000,31.4
+LK52,Ampara,Eastern,false,,LK52,7.2912,81.6724,335000,33.1
+LK52_K,Kalmunai,Eastern,true,Ampara,LK52,7.4165,81.8252,415000,38.2
+LK53,Trincomalee,Eastern,false,,LK53,8.5874,81.2152,379000,32.5
+LK61,Kurunegala,North Western,false,,LK61,7.4863,80.3623,1618000,24.1
+LK62,Puttalam,North Western,false,,LK62,8.0408,79.8394,761000,33.8
+LK71,Anuradhapura,North Central,false,,LK71,8.3114,80.4037,860000,26.5
+LK72,Polonnaruwa,North Central,false,,LK72,7.9403,81.0188,406000,29.3
+LK81,Badulla,Uva,false,,LK81,6.9934,81.0550,815000,30.2
+LK82,Monaragala,Uva,false,,LK82,6.8728,81.3507,451000,23.4
+LK91,Ratnapura,Sabaragamuwa,false,,LK91,6.6828,80.4037,1088000,27.8
+LK92,Kegalle,Sabaragamuwa,false,,LK92,7.2513,80.3464,840000,31.6

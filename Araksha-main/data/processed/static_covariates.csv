@@ -1,0 +1,27 @@
+district_id,district_name,province,is_health_zone,parent_district,population_2023,log_population,piped_water_pct,num_neighbours
+LK11,Colombo,Western,false,,2365000,14.6763,84.4,3
+LK12,Gampaha,Western,false,,2304000,14.6502,58.2,5
+LK13,Kalutara,Western,false,,1222000,14.016,42.1,4
+LK21,Kandy,Central,false,,1375000,14.134,45.8,6
+LK22,Matale,Central,false,,484000,13.0898,34.2,5
+LK23,Nuwara Eliya,Central,false,,711000,13.4744,28.6,4
+LK31,Galle,Southern,false,,1063000,13.8766,43.5,3
+LK32,Matara,Southern,false,,810000,13.6048,39.8,3
+LK33,Hambantota,Southern,false,,599000,13.303,36.4,4
+LK41,Jaffna,Northern,false,,583000,13.2759,14.6,1
+LK42,Kilinochchi,Northern,false,,113000,11.6351,9.8,3
+LK43,Mannar,Northern,false,,99000,11.5029,21.3,5
+LK44,Vavuniya,Northern,false,,172000,12.0552,22.7,3
+LK45,Mullaitivu,Northern,false,,92000,11.4295,11.2,4
+LK51,Batticaloa,Eastern,false,,526000,13.1731,31.4,4
+LK52,Ampara,Eastern,false,,335000,12.7219,33.1,5
+LK52_K,Kalmunai,Eastern,true,Ampara,415000,12.936,38.2,3
+LK53,Trincomalee,Eastern,false,,379000,12.8453,32.5,4
+LK61,Kurunegala,North Western,false,,1618000,14.2967,24.1,6
+LK62,Puttalam,North Western,false,,761000,13.5424,33.8,4
+LK71,Anuradhapura,North Central,false,,860000,13.6647,26.5,7
+LK72,Polonnaruwa,North Central,false,,406000,12.9141,29.3,6
+LK81,Badulla,Uva,false,,815000,13.6109,30.2,7
+LK82,Monaragala,Uva,false,,451000,13.0192,23.4,5
+LK91,Ratnapura,Sabaragamuwa,false,,1088000,13.8999,27.8,8
+LK92,Kegalle,Sabaragamuwa,false,,840000,13.6412,31.6,6

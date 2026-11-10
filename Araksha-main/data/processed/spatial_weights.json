@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "type": "Queen-contiguity row-standardized",
+    "units_count": 26,
+    "kalmunai_handled": true,
+    "islands": []
+  },
+  "district_names": [
+    "Colombo",
+    "Gampaha",
+    "Kalutara",
+    "Kandy",
+    "Matale",
+    "Nuwara Eliya",
+    "Galle",
+    "Matara",
+    "Hambantota",
+    "Jaffna",
+    "Kilinochchi",
+    "Mannar",
+    "Vavuniya",
+    "Mullaitivu",
+    "Batticaloa",
+    "Ampara",
+    "Kalmunai",
+    "Trincomalee",
+    "Kurunegala",
+    "Puttalam",
+    "Anuradhapura",
+    "Polonnaruwa",
+    "Badulla",
+    "Monaragala",
+    "Ratnapura",
+    "Kegalle"
+  ],
+  "weights": {
+    "Colombo": {
+      "Gampaha": 0.333333,
+      "Kalutara": 0.333333,
+      "Kegalle": 0.333333
+    },
+    "Gampaha": {
+      "Colombo": 0.2,
+      "Kalutara": 0.2,
+      "Kegalle": 0.2,
+      "Kurunegala": 0.2,
+      "Puttalam": 0.2
+    },
+    "Kalutara": {
+      "Colombo": 0.25,
+      "Kegalle": 0.25,
+      "Ratnapura": 0.25,
+      "Galle": 0.25
+    },
+    "Kandy": {
+      "Matale": 0.166667,
+      "Kurunegala": 0.166667,
+      "Kegalle": 0.166667,
+      "Nuwara Eliya": 0.166667,
+      "Badulla": 0.166667,
+      "Ampara": 0.166667
+    },
+    "Matale": {
+      "Anuradhapura": 0.2,
+      "Polonnaruwa": 0.2,
+      "Badulla": 0.2,
+      "Kandy": 0.2,
+      "Kurunegala": 0.2
+    },
+    "Nuwara Eliya": {
+      "Kandy": 0.25,
+      "Kegalle": 0.25,
+      "Ratnapura": 0.25,
+      "Badulla": 0.25
+    },
+    "Galle": {
+      "Kalutara": 0.333333,
+      "Ratnapura": 0.333333,
+      "Matara": 0.333333
+    },
+    "Matara": {
+      "Galle": 0.333333,
+      "Ratnapura": 0.333333,
+      "Hambantota": 0.333333
+    },
+    "Hambantota": {
+      "Matara": 0.25,
+      "Ratnapura": 0.25,
+      "Monaragala": 0.25,
+      "Ampara": 0.25
+    },
+    "Jaffna": {
+      "Kilinochchi": 1.0
+    },
+    "Kilinochchi": {
+      "Jaffna": 0.333333,
+      "Mullaitivu": 0.333333,
+      "Mannar": 0.333333
+    },
+    "Mannar": {
+      "Kilinochchi": 0.2,
+      "Mullaitivu": 0.2,
+      "Vavuniya": 0.2,
+      "Anuradhapura": 0.2,
+      "Puttalam": 0.2
+    },
+    "Vavuniya": {
+      "Mannar": 0.333333,
+      "Mullaitivu": 0.333333,
+      "Anuradhapura": 0.333333
+    },
+    "Mullaitivu": {
+      "Kilinochchi": 0.25,
+      "Mannar": 0.25,
+      "Vavuniya": 0.25,
+      "Trincomalee": 0.25
+    },
+    "Batticaloa": {
+      "Polonnaruwa": 0.25,
+      "Ampara": 0.25,
+      "Kalmunai": 0.25,
+      "Trincomalee": 0.25
+    },
+    "Ampara": {
+      "Batticaloa": 0.2,
+      "Kalmunai": 0.2,
+      "Monaragala": 0.2,
+      "Badulla": 0.2,
+      "Kandy": 0.2
+    },
+    "Kalmunai": {
+      "Ampara": 0.333333,
+      "Batticaloa": 0.333333,
+      "Monaragala": 0.333333
+    },
+    "Trincomalee": {
+      "Mullaitivu": 0.25,
+      "Anuradhapura": 0.25,
+      "Polonnaruwa": 0.25,
+      "Batticaloa": 0.25
+    },
+    "Kurunegala": {
+      "Puttalam": 0.166667,
+      "Anuradhapura": 0.166667,
+      "Matale": 0.166667,
+      "Kandy": 0.166667,
+      "Kegalle": 0.166667,
+      "Gampaha": 0.166667
+    },
+    "Puttalam": {
+      "Mannar": 0.25,
+      "Anuradhapura": 0.25,
+      "Kurunegala": 0.25,
+      "Gampaha": 0.25
+    },
+    "Anuradhapura": {
+      "Mannar": 0.142857,
+      "Vavuniya": 0.142857,
+      "Trincomalee": 0.142857,
+      "Polonnaruwa": 0.142857,
+      "Matale": 0.142857,
+      "Kurunegala": 0.142857,
+      "Puttalam": 0.142857
+    },
+    "Polonnaruwa": {
+      "Anuradhapura": 0.166667,
+      "Trincomalee": 0.166667,
+      "Batticaloa": 0.166667,
+      "Ampara": 0.166667,
+      "Badulla": 0.166667,
+      "Matale": 0.166667
+    },
+    "Badulla": {
+      "Polonnaruwa": 0.142857,
+      "Ampara": 0.142857,
+      "Monaragala": 0.142857,
+      "Nuwara Eliya": 0.142857,
+      "Kandy": 0.142857,
+      "Matale": 0.142857,
+      "Ratnapura": 0.142857
+    },
+    "Monaragala": {
+      "Badulla": 0.2,
+      "Ampara": 0.2,
+      "Kalmunai": 0.2,
+      "Hambantota": 0.2,
+      "Ratnapura": 0.2
+    },
+    "Ratnapura": {
+      "Kegalle": 0.125,
+      "Nuwara Eliya": 0.125,
+      "Badulla": 0.125,
+      "Monaragala": 0.125,
+      "Hambantota": 0.125,
+      "Matara": 0.125,
+      "Galle": 0.125,
+      "Kalutara": 0.125
+    },
+    "Kegalle": {
+      "Kurunegala": 0.166667,
+      "Kandy": 0.166667,
+      "Nuwara Eliya": 0.166667,
+      "Ratnapura": 0.166667,
+      "Colombo": 0.166667,
+      "Gampaha": 0.166667
+    }
+  }
+}

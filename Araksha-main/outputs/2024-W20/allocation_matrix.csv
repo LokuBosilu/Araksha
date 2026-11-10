@@ -1,0 +1,27 @@
+district_id,district_name,province,population,piped_water_pct,max_tier,max_exceed_prob,max_incidence,h1_cases,h2_cases,h3_cases,h4_cases,h1_tier,h2_tier,h3_tier,h4_tier,early_anomaly_flag,insufficient_data,priority_score,allocation_rank
+LK21,Kandy,Central,1375000,45.8,Low,0.01,6.11,57.1,65.4,67.0,84.0,Low,Low,Low,Low,True,False,131.6,1
+LK33,Hambantota,Southern,599000,36.4,Low,0.038,3.94,15.9,19.9,16.9,23.6,Low,Low,Low,Low,True,False,130.8,2
+LK92,Kegalle,Sabaragamuwa,840000,31.6,Low,0.011,3.88,29.5,29.8,29.1,32.6,Low,Low,Low,Low,True,False,129.4,3
+LK22,Matale,Central,484000,34.2,Low,0.005,3.24,8.7,12.0,11.6,15.7,Low,Low,Low,Low,True,False,128.5,4
+LK82,Monaragala,Uva,451000,23.4,Low,0.011,2.82,10.5,9.7,12.7,12.1,Low,Low,Low,Low,True,False,128.4,5
+LK53,Trincomalee,Eastern,379000,32.5,Low,0.005,3.09,11.7,10.3,9.9,9.6,Low,Low,Low,Low,True,False,128.3,6
+LK23,Nuwara Eliya,Central,711000,28.6,Low,0.027,0.73,3.5,4.1,4.8,5.2,Low,Low,Low,Low,True,False,127.1,7
+LK72,Polonnaruwa,North Central,406000,29.3,Low,0.005,1.13,3.6,3.7,3.8,4.6,Low,Low,Low,Low,True,False,126.4,8
+LK91,Ratnapura,Sabaragamuwa,1088000,27.8,Low,0.133,5.06,43.6,49.3,42.2,55.1,Low,Low,Low,Low,False,False,111.7,9
+LK11,Colombo,Western,2365000,84.4,Low,0.005,5.75,92.4,106.9,121.8,136.0,Low,Low,Low,Low,False,False,106.0,10
+LK41,Jaffna,Northern,583000,14.6,Low,0.005,3.5,20.4,19.5,20.0,19.4,Low,Low,Low,Low,False,False,103.8,11
+LK13,Kalutara,Western,1222000,42.1,Low,0.005,3.49,36.1,42.6,36.7,38.1,Low,Low,Low,Low,False,False,103.7,12
+LK12,Gampaha,Western,2304000,58.2,Low,0.005,2.35,45.1,47.5,50.6,54.2,Low,Low,Low,Low,False,False,102.6,13
+LK31,Galle,Southern,1063000,43.5,Low,0.005,2.34,19.3,21.3,20.6,24.9,Low,Low,Low,Low,False,False,102.6,14
+LK32,Matara,Southern,810000,39.8,Low,0.005,2.15,9.8,12.1,12.4,17.4,Low,Low,Low,Low,False,False,102.4,15
+LK51,Batticaloa,Eastern,526000,31.4,Low,0.005,2.11,9.4,11.1,9.6,10.9,Low,Low,Low,Low,False,False,102.4,16
+LK61,Kurunegala,North Western,1618000,24.1,Low,0.005,1.93,23.4,28.8,26.5,31.3,Low,Low,Low,Low,False,False,102.2,17
+LK81,Badulla,Uva,815000,30.2,Low,0.005,1.69,7.5,10.2,10.3,13.8,Low,Low,Low,Low,False,False,101.9,18
+LK43,Mannar,Northern,99000,21.3,Low,0.005,1.52,0.9,1.5,1.0,0.9,Low,Low,Low,Low,False,False,101.8,19
+LK62,Puttalam,North Western,761000,33.8,Low,0.005,1.55,7.7,9.2,10.5,11.8,Low,Low,Low,Low,False,False,101.8,20
+LK45,Mullaitivu,Northern,92000,11.2,Low,0.005,1.2,1.1,1.0,1.1,1.0,Low,Low,Low,Low,False,False,101.5,21
+LK42,Kilinochchi,Northern,113000,9.8,Low,0.005,0.8,0.7,0.7,0.9,0.6,Low,Low,Low,Low,False,False,101.0,22
+LK52,Ampara,Eastern,335000,33.1,Low,0.005,0.72,1.6,1.8,2.4,1.8,Low,Low,Low,Low,False,False,101.0,23
+LK71,Anuradhapura,North Central,860000,26.5,Low,0.005,0.65,4.0,4.4,4.4,5.6,Low,Low,Low,Low,False,False,100.9,24
+LK44,Vavuniya,Northern,172000,22.7,Low,0.005,0.29,0.3,0.4,0.5,0.5,Low,Low,Low,Low,False,False,100.5,25
+LK52_K,Kalmunai,Eastern,415000,38.2,Low,0.0,0.0,0.0,0.0,0.0,0.0,Insufficient Data,Insufficient Data,Insufficient Data,Insufficient Data,False,True,100.0,26

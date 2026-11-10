@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/sample_pdfs/
+

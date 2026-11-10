@@ -1,0 +1,448 @@
+<mxGraphModel dx="1650" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ==================== ENTITIES & SUB-TYPES (2-COMPARTMENT UML) ==================== -->
+
+    <!-- RESIDENT -->
+    <mxCell id="ent_resident" value="w2181730_Resident" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="80" y="130" width="220" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="att_resident" value="w2181730_residentRefNo{PK}&#xa;w2181730_fullName&#xa;w2181730_email&#xa;w2181730_mobileNumber&#xa;w2181730_dateOfBirth&#xa;w2181730_preference" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_resident">
+      <mxGeometry y="26" width="220" height="104" as="geometry" />
+    </mxCell>
+
+    <!-- RESIDENT ISA TRIANGLE -->
+    <mxCell id="tri_resident" value="" style="triangle;direction=north;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="176" y="290" width="28" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="lbl_tri_resident" value="{mandatory, or}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="210" y="290" width="110" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- TENANT -->
+    <mxCell id="ent_tenant" value="w2181730_Tenant" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="70" y="380" width="200" height="76" as="geometry" />
+    </mxCell>
+    <mxCell id="att_tenant" value="w2181730_monthlySalary&#xa;w2181730_creditScore" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_tenant">
+      <mxGeometry y="26" width="200" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- OWNER -->
+    <mxCell id="ent_owner" value="w2181730_Owner" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="450" y="250" width="200" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="att_owner" value="w2181730_purchaseDate" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_owner">
+      <mxGeometry y="26" width="200" height="38" as="geometry" />
+    </mxCell>
+
+    <!-- VISITOR -->
+    <mxCell id="ent_visitor" value="w2181730_Visitor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="450" y="40" width="210" height="104" as="geometry" />
+    </mxCell>
+    <mxCell id="att_visitor" value="w2181730_visitorRefNo{PK}&#xa;w2181730_fullName&#xa;w2181730_email&#xa;w2181730_mobileNumber" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_visitor">
+      <mxGeometry y="26" width="210" height="78" as="geometry" />
+    </mxCell>
+
+    <!-- VISIT RELATIONSHIP ATTRIBUTES BOX -->
+    <mxCell id="relbox_visit" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=18;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="690" y="135" width="200" height="66" as="geometry" />
+    </mxCell>
+    <mxCell id="att_relbox_visit" value="w2181730_visitStartDateTime&#xa;w2181730_visitEndDateTime" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="relbox_visit">
+      <mxGeometry y="18" width="200" height="48" as="geometry" />
+    </mxCell>
+
+    <!-- RENTAL AGREEMENT -->
+    <mxCell id="ent_agreement" value="w2181730_Rental_Agreement" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="365" width="235" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="att_agreement" value="w2181730_agreementRefNo{PK}&#xa;w2181730_startDate&#xa;w2181730_endDate&#xa;w2181730_depositPaid&#xa;w2181730_totalCost&#xa;w2181730_leadContactPreference" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_agreement">
+      <mxGeometry y="26" width="235" height="104" as="geometry" />
+    </mxCell>
+
+    <!-- UTILITIES CONTRACT -->
+    <mxCell id="ent_utilities" value="w2181730_Utilities_Contract" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="565" width="235" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="att_utilities" value="w2181730_contractRefNo{PK}&#xa;w2181730_supplierName&#xa;w2181730_utilityTypes&#xa;w2181730_startDate&#xa;w2181730_endDate&#xa;w2181730_estimatedCost" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_utilities">
+      <mxGeometry y="26" width="235" height="104" as="geometry" />
+    </mxCell>
+
+    <!-- APARTMENT -->
+    <mxCell id="ent_apartment" value="w2181730_Apartment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="250" width="220" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="att_apartment" value="w2181730_apartmentRefNo{PK}&#xa;w2181730_numBedrooms&#xa;w2181730_description&#xa;w2181730_size&#xa;w2181730_monthlyRent" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_apartment">
+      <mxGeometry y="26" width="220" height="92" as="geometry" />
+    </mxCell>
+
+    <!-- BUILDING -->
+    <mxCell id="ent_building" value="w2181730_Building" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="50" width="215" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="att_building" value="w2181730_buildingRefNo{PK}&#xa;w2181730_buildingName&#xa;w2181730_buildingAddress" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_building">
+      <mxGeometry y="26" width="215" height="64" as="geometry" />
+    </mxCell>
+
+    <!-- FACILITY -->
+    <mxCell id="ent_facility" value="w2181730_Facility" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1420" y="50" width="215" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="att_facility" value="w2181730_facilityRefNo{PK}&#xa;w2181730_facilityName&#xa;w2181730_facilityDescription" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_facility">
+      <mxGeometry y="26" width="215" height="64" as="geometry" />
+    </mxCell>
+
+    <!-- PARKING LOT -->
+    <mxCell id="ent_lot" value="w2181730_Parking_Lot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="230" width="215" height="104" as="geometry" />
+    </mxCell>
+    <mxCell id="att_lot" value="w2181730_lotRefNo{PK}&#xa;w2181730_lotName&#xa;w2181730_capacity&#xa;w2181730_lotType" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_lot">
+      <mxGeometry y="26" width="215" height="78" as="geometry" />
+    </mxCell>
+
+    <!-- PARKING SPACE -->
+    <mxCell id="ent_space" value="w2181730_Parking_Space" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="405" width="215" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="att_space" value="w2181730_spaceRefNo{PK}" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_space">
+      <mxGeometry y="26" width="215" height="38" as="geometry" />
+    </mxCell>
+
+    <!-- PARKING SPACE ISA TRIANGLE 1 -->
+    <mxCell id="tri_space" value="" style="triangle;direction=north;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1223" y="500" width="28" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="lbl_tri_space" value="{mandatory, or}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1256" y="500" width="110" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- RESIDENT PARKING SPACE -->
+    <mxCell id="ent_res_space" value="w2181730_Resident_Parking_Space" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="960" y="565" width="230" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- VISITOR PARKING SPACE -->
+    <mxCell id="ent_vis_space" value="w2181730_Visitor_Parking_Space" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1310" y="565" width="230" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- RESIDENT PARKING SPACE ISA TRIANGLE 2 -->
+    <mxCell id="tri_res_space" value="" style="triangle;direction=north;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1061" y="655" width="28" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="lbl_tri_res_space" value="{mandatory, or}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1095" y="655" width="110" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- CHARGING SPACE -->
+    <mxCell id="ent_charging_space" value="w2181730_Charging_Space" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="830" y="725" width="210" height="76" as="geometry" />
+    </mxCell>
+    <mxCell id="att_charging_space" value="w2181730_chargerType&#xa;w2181730_chargingSpeed" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_charging_space">
+      <mxGeometry y="26" width="210" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- STANDARD SPACE -->
+    <mxCell id="ent_standard_space" value="w2181730_Standard_Space" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="725" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- VEHICLE -->
+    <mxCell id="ent_vehicle" value="w2181730_Vehicle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="80" y="690" width="230" height="104" as="geometry" />
+    </mxCell>
+    <mxCell id="att_vehicle" value="w2181730_registrationNumber{PK}&#xa;w2181730_make&#xa;w2181730_model&#xa;w2181730_description" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_vehicle">
+      <mxGeometry y="26" width="230" height="78" as="geometry" />
+    </mxCell>
+
+    <!-- VEHICLE ISA TRIANGLE -->
+    <mxCell id="tri_vehicle" value="" style="triangle;direction=north;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="181" y="830" width="28" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="lbl_tri_vehicle" value="{mandatory, and}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="215" y="830" width="115" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- ELECTRIC VEHICLE -->
+    <mxCell id="ent_ev" value="w2181730_Electric_Vehicle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="40" y="895" width="195" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="att_ev" value="w2181730_evType" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_ev">
+      <mxGeometry y="26" width="195" height="38" as="geometry" />
+    </mxCell>
+
+    <!-- FUEL VEHICLE -->
+    <mxCell id="ent_fv" value="w2181730_Fuel_Vehicle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="260" y="895" width="195" height="64" as="geometry" />
+    </mxCell>
+    <mxCell id="att_fv" value="w2181730_fuelType" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="ent_fv">
+      <mxGeometry y="26" width="195" height="38" as="geometry" />
+    </mxCell>
+
+    <!-- VISITOR PARKING USE RELATIONSHIP ATTRIBUTES BOX -->
+    <mxCell id="relbox_vis_use" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=18;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1315" y="830" width="220" height="66" as="geometry" />
+    </mxCell>
+    <mxCell id="att_relbox_vis_use" value="w2181730_arrivalDateTime&#xa;w2181730_departureDateTime" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;" vertex="1" parent="relbox_vis_use">
+      <mxGeometry y="18" width="220" height="48" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== SPECIALISATION LINES ==================== -->
+
+    <!-- Resident Specialisation -->
+    <mxCell id="spec_res_top" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;" edge="1" parent="1" source="tri_resident" target="ent_resident">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_res_tenant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_resident" target="ent_tenant">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_res_owner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="tri_resident" target="ent_owner">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="190" y="340" />
+          <mxPoint x="380" y="340" />
+          <mxPoint x="380" y="282" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Parking Space Specialisation 1 -->
+    <mxCell id="spec_space_top" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;" edge="1" parent="1" source="tri_space" target="ent_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_space_res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_space" target="ent_res_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_space_vis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_space" target="ent_vis_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Resident Parking Space Specialisation 2 -->
+    <mxCell id="spec_resspace_top" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;" edge="1" parent="1" source="tri_res_space" target="ent_res_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_resspace_chg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_res_space" target="ent_charging_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_resspace_std" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_res_space" target="ent_standard_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Vehicle Specialisation -->
+    <mxCell id="spec_veh_top" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;" edge="1" parent="1" source="tri_vehicle" target="ent_vehicle">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_veh_ev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_vehicle" target="ent_ev">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="spec_veh_fv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="tri_vehicle" target="ent_fv">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== RELATIONSHIPS & MULTIPLICITIES ==================== -->
+
+    <!-- 1. Building contains Apartment -->
+    <mxCell id="rel_bldg_apt" value="contains ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=0;exitY=0.5;entryX=0.75;entryY=0;" edge="1" parent="1" source="ent_building" target="ent_apartment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_bldg_apt" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_apt">
+      <mxGeometry x="-0.82" y="12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_bldg_apt" value="1..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_apt">
+      <mxGeometry x="0.82" y="-15" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 2. Building offers Facility -->
+    <mxCell id="rel_bldg_fac" value="offers ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" edge="1" parent="1" source="ent_building" target="ent_facility">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_bldg_fac" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_fac">
+      <mxGeometry x="-0.7" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_bldg_fac" value="1..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_fac">
+      <mxGeometry x="0.7" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 3. Building has Parking_Lot -->
+    <mxCell id="rel_bldg_lot" value="has ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" edge="1" parent="1" source="ent_building" target="ent_lot">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_bldg_lot" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_lot">
+      <mxGeometry x="-0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_bldg_lot" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_bldg_lot">
+      <mxGeometry x="0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 4. Parking_Lot is divided into Parking_Space -->
+    <mxCell id="rel_lot_space" value="is divided into ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" edge="1" parent="1" source="ent_lot" target="ent_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_lot_space" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_lot_space">
+      <mxGeometry x="-0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_lot_space" value="1..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_lot_space">
+      <mxGeometry x="0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 5. Owner owns Apartment -->
+    <mxCell id="rel_owner_apt" value="owns ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.28;" edge="1" parent="1" source="ent_owner" target="ent_apartment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_owner_apt" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_owner_apt">
+      <mxGeometry x="-0.75" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_owner_apt" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_owner_apt">
+      <mxGeometry x="0.75" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 6. Tenant signs Rental_Agreement -->
+    <mxCell id="rel_tenant_signs" value="signs ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.25;entryX=0;entryY=0.25;" edge="1" parent="1" source="ent_tenant" target="ent_agreement">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_tenant_signs" value="1..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_tenant_signs">
+      <mxGeometry x="-0.78" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_tenant_signs" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_tenant_signs">
+      <mxGeometry x="0.78" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 7. Tenant is lead tenant for Rental_Agreement -->
+    <mxCell id="rel_tenant_lead" value="is lead tenant for ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.75;entryX=0;entryY=0.65;" edge="1" parent="1" source="ent_tenant" target="ent_agreement">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_tenant_lead" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_tenant_lead">
+      <mxGeometry x="-0.78" y="12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_tenant_lead" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_tenant_lead">
+      <mxGeometry x="0.78" y="12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 8. Rental_Agreement is for Apartment -->
+    <mxCell id="rel_agr_apt" value="is for ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.35;entryX=0;entryY=0.8;" edge="1" parent="1" source="ent_agreement" target="ent_apartment">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="750" y="410" />
+          <mxPoint x="750" y="344" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m1_agr_apt" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_agr_apt">
+      <mxGeometry x="-0.8" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_agr_apt" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_agr_apt">
+      <mxGeometry x="0.8" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 9. Rental_Agreement includes Utilities_Contract -->
+    <mxCell id="rel_agr_util" value="includes ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;" edge="1" parent="1" source="ent_agreement" target="ent_utilities">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_agr_util" value="1..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_agr_util">
+      <mxGeometry x="-0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_agr_util" value="1..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_agr_util">
+      <mxGeometry x="0.7" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 10. Visitor visits Apartment (with Relationship Attribute Box) -->
+    <mxCell id="rel_vis_apt" value="visits ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.5;entryX=0.45;entryY=0;" edge="1" parent="1" source="ent_visitor" target="ent_apartment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_vis_apt" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_vis_apt">
+      <mxGeometry x="-0.85" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_vis_apt" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_vis_apt">
+      <mxGeometry x="0.82" y="-18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="dash_visit_attr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;dashed=1;strokeColor=#000000;exitX=0.5;exitY=0;" edge="1" parent="1" source="relbox_visit">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="790" y="92" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 11. Apartment is allocated Resident_Parking_Space -->
+    <mxCell id="rel_apt_resspace" value="is allocated ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=0.75;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="ent_apartment" target="ent_res_space">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1_apt_resspace" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_apt_resspace">
+      <mxGeometry x="-0.8" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_apt_resspace" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_apt_resspace">
+      <mxGeometry x="0.8" y="18" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 12. Vehicle uses Resident_Parking_Space -->
+    <mxCell id="rel_veh_resspace" value="uses ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.3;entryX=0;entryY=0.5;" edge="1" parent="1" source="ent_vehicle" target="ent_res_space">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="750" y="721" />
+          <mxPoint x="750" y="592" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m1_veh_resspace" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_veh_resspace">
+      <mxGeometry x="-0.9" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_veh_resspace" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_veh_resspace">
+      <mxGeometry x="0.88" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 13. Resident registers Vehicle -->
+    <mxCell id="rel_res_veh" value="registers ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=0;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="ent_resident" target="ent_vehicle">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="40" y="195" />
+          <mxPoint x="40" y="721" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m1_res_veh" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_res_veh">
+      <mxGeometry x="-0.9" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_res_veh" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_res_veh">
+      <mxGeometry x="0.9" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 14. Visitor registers Vehicle -->
+    <mxCell id="rel_vis_veh" value="registers ▼" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=0;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="ent_visitor" target="ent_vehicle">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="15" y="92" />
+          <mxPoint x="15" y="768" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m1_vis_veh" value="0..1" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_vis_veh">
+      <mxGeometry x="-0.92" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_vis_veh" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_vis_veh">
+      <mxGeometry x="0.92" y="12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- 15. Vehicle uses Visitor_Parking_Space (with Relationship Attribute Box) -->
+    <mxCell id="rel_veh_visspace" value="uses ►" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;strokeColor=#000000;fontFamily=Helvetica;fontSize=11;exitX=1;exitY=0.75;entryX=1;entryY=0.5;" edge="1" parent="1" source="ent_vehicle" target="ent_vis_space">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="520" y="768" />
+          <mxPoint x="520" y="990" />
+          <mxPoint x="1580" y="990" />
+          <mxPoint x="1580" y="592" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m1_veh_visspace" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_veh_visspace">
+      <mxGeometry x="-0.94" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="m2_veh_visspace" value="0..*" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;" vertex="1" connectable="0" parent="rel_veh_visspace">
+      <mxGeometry x="0.95" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="dash_vis_use_attr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;dashed=1;strokeColor=#000000;exitX=0.5;exitY=1;" edge="1" parent="1" source="relbox_vis_use">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1425" y="990" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

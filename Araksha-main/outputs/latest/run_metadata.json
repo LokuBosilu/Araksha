@@ -1,0 +1,18 @@
+{
+  "model_name": "Silent Node Ensemble (NB-GAM + Seasonal-AR)",
+  "model_version": "1.0.0",
+  "run_timestamp_utc": "2026-11-10T17:11:37.704905+00:00",
+  "as_of_origin": "2024-W20",
+  "data_cutoff_week": "2024-W18",
+  "delay_buffer_weeks": 2,
+  "horizons_predicted": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "districts_count": 26,
+  "staleness_flag": false,
+  "warnings": [],
+  "disclaimer": "Planning decision-support tool for vector-control and MOH officers, NOT a clinical diagnostic tool."
+}

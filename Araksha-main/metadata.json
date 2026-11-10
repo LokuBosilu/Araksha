@@ -1,0 +1,8 @@
+{
+  "name": "Araksha",
+  "description": "dengue early-warning dashboard is an automated, weekly forecasting tool that predicts dengue risk four weeks ahead for all 26 of Sri Lanka’s reporting units, built for district vector-control officers and Medical Officers of Health rather than the public. Because officers currently plan inspections and fogging from last week’s case counts, which only rise after transmission has already escalated, the tool uses about 20 years of surveillance data together with lagged rainfall, temperature and humidity, ENSO/IOD climate signals, spillover from neighbouring districts, population, and piped-water access to give them 2 to 4 weeks of lead time. A negative-binomial GAM with a LightGBM ensemble, benchmarked against seasonal baselines, produces a risk tier (Low, Moderate, High or Extreme) for each district, with prediction intervals and threshold-exceedance probabilities. Districts with stale or missing data are flagged as “Insufficient Data” rather than defaulting to low risk. Results appear on a Streamlit dashboard with a risk-coloured district map, a forecast table, data-freshness banners and one-click CSV export, and the whole pipeline runs weekly on GitHub Actions as a non-clinical planning aid.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
